@@ -2,4 +2,4 @@
 
 ## The basic structure 
 
-![Pin Generator](./Pin_Generator.png)
+![Pin Generator](./pin-matcher-master/image/Pin_Generator.png)
