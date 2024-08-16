@@ -18,31 +18,31 @@
             </div>
             <div class="col-md-6">
                 <div class="input-section half-width">
-                    <input class="form-control" type="text">
+                    <input class="form-control" type="text" id="numPad">
                     <div class="numbers">
                         <div class="calc-body">
                             <div class="calc-button-row">
-                              <div class="button" id="7" onclick="clickedNumber('7')">7</div>
-                              <div class="button">8</div>
-                              <div class="button">9</div>
+                              <div class="button" id="7" onclick="clickedNumber(7)">7</div>
+                              <div class="button" id="8" onclick="clickedNumber(8)">8</div>
+                              <div class="button" id="9" onclick="clickedNumber(9)">9</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">4</div>
-                              <div class="button">5</div>
-                              <div class="button">6</div>
+                              <div class="button" id="4" onclick="clickedNumber(4)">4</div>
+                              <div class="button" id="5" onclick="clickedNumber(5)">5</div>
+                              <div class="button" id="6" onclick="clickedNumber(6)">6</div>
                             </div>
                             <div class="calc-button-row">
-                              <div class="button">1</div>
-                              <div class="button">2</div>
-                              <div class="button">3</div>
+                              <div class="button" id="1" onclick="clickedNumber(1)">1</div>
+                              <div class="button" id="2" onclick="clickedNumber(2)">2</div>
+                              <div class="button" id="3" onclick="clickedNumber(3)">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button">&lt;</div>
-                                <div class="button">0</div>
-                                <div class="button">C</div>
+                                <div class="button" id="clearLast" onclick="clearLastDigit">&lt;</div>
+                                <div class="button" id="0" onclick="clickedNumber(0)">0</div>
+                                <div class="button" id="clear" onclick="clearInput()">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn">Submit</button>
+                                <button type="submit" class="submit-btn" onclick="submitNums()">Submit</button>
                                 <p class="action-left">3 try left</p>
                             </div>
                     </div>
