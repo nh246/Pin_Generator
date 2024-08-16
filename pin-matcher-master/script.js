@@ -31,18 +31,35 @@ function clearLastDigit(){
 //  submit 
 
 function submitNums () {
-  let num1 = document.getElementById("numpad").value;
-  let num2 = document.getElementById("displayPin").value;
+  let count = 0;
 
+
+  
+  let num1 = document.getElementById("numPad").value;
+  let num2 = document.getElementById("displayPin").value;
+ console.log(num2);
   let theNewNum1 = parseInt(num1);
   let theNewNum2 = parseInt(num2);
 
-  if(theNewNum1 == theNewNum2 )
-  {
-    console.log("the pin has matched");
-  }
+    if(theNewNum1 == theNewNum2 )
+    {
+      document.getElementById("matchedPin").style.display= "block";
+      document.getElementById("unmatchedPin").style.display= "none";
+    }
+    else {
+      document.getElementById("unmatchedPin").style.display= "block";
+      tryLeftCall()
+    }
+
+
 }
 
+function tryLeftCall() {
+  let tryNum = document.getElementById("tryleft").innerHTML -= 1;
+  if(tryNum == 0){
+       document.getElementById("submitBtn").disabled = true;
+  } 
+}
 
 
 

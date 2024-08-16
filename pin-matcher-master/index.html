@@ -37,21 +37,21 @@
                               <div class="button" id="3" onclick="clickedNumber(3)">3</div>
                             </div>
                             <div class="calc-button-row">
-                                <div class="button" id="clearLast" onclick="clearLastDigit">&lt;</div>
+                                <div class="button" id="clearLast" onclick="clearLastDigit()">&lt;</div>
                                 <div class="button" id="0" onclick="clickedNumber(0)">0</div>
                                 <div class="button" id="clear" onclick="clearInput()">C</div>
                             </div>
                             <div>
-                                <button type="submit" class="submit-btn" onclick="submitNums()">Submit</button>
-                                <p class="action-left">3 try left</p>
+                                <button type="submit" class="submit-btn" id="submitBtn" onclick="submitNums()">Submit</button>
+                                <p class="action-left"> <span id="tryleft">3</span>  try left</p>
                             </div>
                     </div>
                 </div>
             </div>
         </div>
         <div class="notify-section">
-            <p class="notify success">❌ Pin Didn't Match, Please try again</p>
-            <p class="notify success">✅ Pin Matched... Secret door is opening for you</p>
+            <p class="notify success" id="unmatchedPin">❌ Pin Didn't Match, Please try again</p>
+            <p class="notify success" id="matchedPin">✅ Pin Matched... Secret door is opening for you</p>
         </div>
     </div>
 
